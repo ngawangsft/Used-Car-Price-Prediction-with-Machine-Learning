@@ -33,12 +33,16 @@ Create a pricing model that gives reliable estimates while staying quick enough 
 Python, pandas, NumPy, scikit-learn, LightGBM, CatBoost, Matplotlib, Jupyter Notebook
 
 ## Project Structure
+<h2>Project Structure</h2>
+<pre>
 used-car-price-prediction/
 │
 ├── data/
 │   └── car_data.csv
 ├── price_prediction.ipynb
 └── README.md
+</pre>
+
 
 ## How to Run
 1. Clone or download the repository.
