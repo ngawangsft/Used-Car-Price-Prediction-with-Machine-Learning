@@ -1,18 +1,22 @@
 # Used Car Price Prediction — Rusty Bargain
 
 ## Overview
-Rusty Bargain is a used car sales service developing an application that allows customers to quickly estimate the market value of their vehicle.
+Rusty Bargain is a used car sales service developing an app that allows customers to quickly estimate the market value of their vehicle. Using past listings, I built and compared multiple machine learning models to predict used car prices and determine the most reliable approach for accurate, fast predictions.
 
-In this project, I built and compared a few machine learning models to predict used car prices from historical listings. The goal is to balance prediction accuracy with training but also fast to train and run, so they could actually be used in a real app.
+## Business Problem
+The goal is to provide accurate predictions while keeping training and prediction times fast enough to be used in a real app.
+An automated pricing model helps the company:  
+- Quickly generate fair market estimates for any vehicle  
+- Improve customer trust and experience  
+- Support decision-making for buying, selling, and pricing strategies  
 
-## Objective
-Create a pricing model that gives reliable estimates while staying quick enough to train and use in practice.
+**Objective** Create a pricing model that gives reliable estimates while staying quick enough to train and use in practice.
 
 ## Highlights & Key Results
 - Compared Linear Regression, Random Forest, LightGBM, and CatBoost
 - Evaluated models on prediction quality (RMSE), training time, and prediction speed
 - LightGBM achieved the best overall balance between accuracy and efficiency
-- High-cardinality features (e.g., PostalCode) were tested and removed after degrading performance
+- High-cardinality features (ex: PostalCode) were tested and removed after degrading performance
 
 ## Model Performance (Best Runs)
 
@@ -32,18 +36,11 @@ Create a pricing model that gives reliable estimates while staying quick enough 
 ## Tools & Technologies
 Python, pandas, NumPy, scikit-learn, LightGBM, CatBoost, Matplotlib, Jupyter Notebook
 
-## Project Structure
-<h2>Project Structure</h2>
-<pre>
-used-car-price-prediction/
-│
-├── data/
-│   └── car_data.csv
-├── price_prediction.ipynb
-└── README.md
-</pre>
+## Dataset
+The dataset can be downloaded here:  
+[Car Data CSV](https://practicum-content.s3.us-west-1.amazonaws.com/datasets/car_data.csv)
 
-
+After downloading, place the file in the `data/` folder before running the notebook.
 ## How to Run
 1. Clone or download the repository.
 2. Ensure `car_data.csv` is in the `data/` folder.
